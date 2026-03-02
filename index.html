@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZENVY - Modern Luxury Fragrances</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              luxury: {
+                bg: '#F5F6F7',
+                silver: '#C1C4C8',
+                olive: '#7B7F55',
+                charcoal: '#2B2E33',
+              }
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['Montserrat', 'sans-serif'],
+            },
+            fontSize: {
+              'xs': ['0.75rem', { lineHeight: '1.6', letterSpacing: '0.05em' }],
+              'sm': ['0.875rem', { lineHeight: '1.7', letterSpacing: '0.025em' }],
+              'base': ['1rem', { lineHeight: '1.8', letterSpacing: '0.01em' }],
+              'lg': ['1.125rem', { lineHeight: '1.8', letterSpacing: '0.01em' }],
+              'xl': ['1.25rem', { lineHeight: '1.6', letterSpacing: '-0.01em' }],
+              '2xl': ['1.5rem', { lineHeight: '1.4', letterSpacing: '-0.02em' }],
+              '3xl': ['1.875rem', { lineHeight: '1.3', letterSpacing: '-0.02em' }],
+              '4xl': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.03em' }],
+              '5xl': ['3rem', { lineHeight: '1.1', letterSpacing: '-0.04em' }],
+              '6xl': ['3.75rem', { lineHeight: '1.1', letterSpacing: '-0.04em' }],
+              '7xl': ['4.5rem', { lineHeight: '1', letterSpacing: '-0.05em' }],
+              '8xl': ['6rem', { lineHeight: '1', letterSpacing: '-0.05em' }],
+              '9xl': ['8rem', { lineHeight: '0.9', letterSpacing: '-0.06em' }],
+            },
+            spacing: {
+              '18': '4.5rem',
+              '22': '5.5rem',
+              '30': '7.5rem',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --base-font-size: 16px;
+        --luxury-charcoal: #2B2E33;
+        --luxury-bg: #F5F6F7;
+      }
+
+      html {
+        font-size: var(--base-font-size);
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--luxury-bg);
+        color: var(--luxury-charcoal);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.8;
+        letter-spacing: 0.01em;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 300;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+
+      /* Fluid Typography Utility */
+      .text-fluid-h1 {
+        font-size: clamp(3rem, 10vw, 8rem);
+      }
+
+      .text-fluid-h2 {
+        font-size: clamp(2.5rem, 8vw, 6rem);
+      }
+
+      /* Spacing Rhythm Helpers */
+      .section-padding {
+        padding-top: clamp(5rem, 15vh, 12rem);
+        padding-bottom: clamp(5rem, 15vh, 12rem);
+      }
+
+      .container-padding {
+        padding-left: clamp(1.5rem, 5vw, 5rem);
+        padding-right: clamp(1.5rem, 5vw, 5rem);
+      }
+
+      .font-serif { font-family: 'Cormorant Garamond', serif; }
+      .font-sans { font-family: 'Montserrat', sans-serif; }
+      /* Custom scrollbar for a more premium feel */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F5F6F7;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #C1C4C8;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #7B7F55;
+      }
+      
+      .luxury-gradient {
+        background: linear-gradient(180deg, #F5F6F7 0%, #E8E9EB 100%);
+      }
+      
+      .dark-luxury-gradient {
+        background: linear-gradient(180deg, #2B2E33 0%, #1A1C1F 100%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.26.2",
+    "@google/genai": "https://esm.sh/@google/genai@0.14.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    
+  </body>
+</html>
